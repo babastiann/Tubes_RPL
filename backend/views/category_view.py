@@ -1,10 +1,7 @@
 class CategoryView:
-    @staticmethod
-    def display_categories(categories):
-        print("Categories:")
+    def display_categories(self, categories):
         for category in categories:
-            print(f"- {category.id}: {category.name}")
+            print(f"Category ID: {category['id']}, Name: {category['name']}")
 
-    @staticmethod
-    def display_message(message):
+    def display_message(self, message):
         print(message)
